@@ -1,0 +1,58 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body style="font-family: Calibri, sans-serif; text-decoration:none">
+<a style="background-color: #006600; border-radius: 28px; border: 1px solid #003300; display: inline-block; 
+cursor: pointer; color: rgb(255, 255, 255); font-family: Arial; padding: 16px 31px; text-decoration: none; text-shadow: rgb(47, 102, 39) 0px 1px 0px;" 
+type="button" href="http://192.168.0.213/glpi/front/ticket.form.php?id=##ticket.id##">Ver detalhes do chamado</a>
+
+<center>
+<table width="640" cellspacing="0" cellpadding="10" class="conteudo">
+	<tr>
+		<td class="header">
+		<table width="100%" cellpadding="0" height="69">
+			<tr >
+				<!--<td width="448" rowspan="2">
+				<img src="C:\Users\jgalhardi\Desktop\Chamado\logo.jpg" height="68" width="218" alt="logomarca"></td>-->
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E6E6FA;"><b>Número do Chamado: </b>##ticket.id##</td>
+			</tr>
+			<tr >
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E0FFFF;"><b>Status:</b> ##ticket.status##</td>
+			</tr>
+		</table>
+		<table width="100%" cellpadding="0" s>
+			<tr>
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E6E6FA;">
+				<p><b>Solicitação: ##ticket.title## :</b> ##ticket.content##</p>
+				</td>
+			</tr>
+		</table>		
+		<table width="100%" cellpadding="0">
+			<tr>
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E0FFFF;">
+					<b>Solicitado por:</b> ##ticket.authors##
+				</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E6E6FA;">
+					<b>Data de Abertura: </b> ##ticket.creationdate##
+				</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #000; padding: 10px;  border-radius: 10px; background-color: #E0FFFF;">
+					<b>Data de Fechamento:</b> ##IFticket.closedate## ##ticket.closedate## 
+				##ENDIFticket.closedate## ##ELSEticket.closedate## ------ ##ENDELSEticket.closedate## 
+				<!--##IFticket.numberoffollowups##-->
+				</td>	
+			</tr>			
+		</table>	
+	</tr>
+</table>
+</div>
+<!--<table width="640" border="0" cellspacing="0" cellpadding="5" class="conteudo">
+	<tr>
+		<td><center>
+		<a href="#" target="_blank" style="border: 0"><img src="C:\Users\jgalhardi\Desktop\Chamado\jgalhardi.jpg" alt="Assinatura de E-mail" width="523" height="175"></a></center></td>
+	</tr>	
+</table>-->
+</center>
+</body>
